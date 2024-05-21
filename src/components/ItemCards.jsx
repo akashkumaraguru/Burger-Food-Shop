@@ -1,37 +1,36 @@
 import React from "react";
-import HeadCards from './HeadCards';
+import CardLayout from "./CardLayout";
 import BurgerCardOneImg from "../Images/cardBurder-one.jpg";
 import BurgerCardTwoImg from "../Images/cardBurder-two.jpg";
 import BurgerCardThirdImg from "../Images/cardBurder-three.jpg";
 
-const MainCardLayout = () => {
+const ItemCards = () => {
   const prod = [
     {
       mainText: "Burger ",
-      subText: "Yummy & Woowww"  ,
-      img: BurgerCardOneImg 
+      subText: "Yummy & Woowww",
+      img: BurgerCardOneImg,
     },
     {
       mainText: "Second-Burger ",
       subText: "Woowwwww",
-      img: BurgerCardTwoImg 
+      img: BurgerCardTwoImg,
     },
     {
       mainText: "Third-Burger",
       subText: "Yumm-Yumm",
-      img: BurgerCardThirdImg 
-    }
-  ]
+      img: BurgerCardThirdImg,
+    },
+  ];
 
   return (
-  <div>
-    {
-        prod.map((e =>{
-            return  <HeadCards mainText={e.mainText} subText={e.subText} img={e.img} />
-        }))
-    }
-   
-  </div>
+    <div className="flex gap-20">
+      {prod.map((e) => {
+        return (
+          <CardLayout mainText={e.mainText} subText={e.subText} img={e.img} />
+        );
+      })}
+    </div>
   );
 };
-export default MainCardLayout;
+export default ItemCards;

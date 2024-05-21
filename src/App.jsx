@@ -1,17 +1,17 @@
-import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar.jsx';
-import Herosec from './components/Herosec';
-import MainCardLayout from './components/MainCardLayot';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar.jsx";
+import HeroSection from "./components/HeroSection";
+import ItemCards from "./components/ItemCards";
 
 function App() {
   return (
-  <>
-  <Navbar />
-  <Herosec />
- 
-  <MainCardLayout />
-  </>
+    <div className='p-5'>
+      <Navbar />
+      <HeroSection />
+
+      <ItemCards />
+    </div>
   );
-};
+}
 export default App;

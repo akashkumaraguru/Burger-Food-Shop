@@ -15,13 +15,12 @@ import { FaUserFriends } from "react-icons/fa";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
-  const [change , setChange] = useState(true);
+  const [change, setChange] = useState(true);
   console.log(change);
   return (
     <div className="max-w-[1660px] mx-auto flex justify-between items-center p-4 ">
       <div className="w-[20vw] flex items-center p-3 justify-evenly">
-        
-        <div onClick={()=> setNav(!nav)} className="cursor-pointer">
+        <div onClick={() => setNav(!nav)} className="cursor-pointer">
           <RxHamburgerMenu size={30} />
         </div>
 
@@ -30,10 +29,23 @@ function Navbar() {
         </h1>
 
         <div className="hidden lg:flex gap-2 items-center bg-gray-200 rounded-full cursor-pointer p-1 text-[14px]">
-          <p className={`text-white rounded-full p-2 ${change ===true ? 'bg-black' : '' }`} onClick={()=>setChange(!change)} >Delivery</p>
-          <p className={`p-2 text-white rounded-full ${change ===false ? 'bg-black' : '' }`} onClick={()=>setChange(change)} >Pickup</p>
+          <p
+            className={`text-white rounded-full p-2 ${
+              change === true ? "bg-black" : ""
+            }`}
+            onClick={() => setChange(!change)}
+          >
+            Delivery
+          </p>
+          <p
+            className={`p-2 text-white rounded-full ${
+              change === false ? "bg-black" : ""
+            }`}
+            onClick={() => setChange(change)}
+          >
+            Pickup
+          </p>
         </div>
-        
       </div>
 
       {/*search...*/}
@@ -68,12 +80,16 @@ function Navbar() {
       <div
         className={
           nav
-            ? 'fixed top-5 left-0 w-[300px] h-screen bg- z-10 duration-300'
-            : 'fixed top-5 left-[-100%] w-[300px] h-screen bg-white z-10 duration-300'
-        }>
+            ? "fixed top-5 left-0 w-[300px] h-screen bg- z-10 duration-300"
+            : "fixed top-5 left-[-100%] w-[300px] h-screen bg-white z-10 duration-300"
+        }
+      >
+        <MdClose
+          size={30}
+          className="absolute right-4 top-4 cursor-pointer"
+          onClick={() => setNav(!nav)}
+        />
 
-        <MdClose size={30} className='absolute right-4 top-4 cursor-pointer' onClick={()=> setNav(!nav)}/>
-        
         <h2 className="text-2xl p-4">
           Best <span className="font-bold">Eats</span>
         </h2>
