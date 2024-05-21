@@ -1,7 +1,7 @@
 import React from "react";
-import CardLayout from "./CardLayout";
+import CardLayout from "../Layouts/CardLayout";
 import BurgerCardOneImg from "../Images/cardBurder-one.jpg";
-import BurgerCardTwoImg from "../Images/cardBurder-two.jpg";
+import BurgerCardTwoImg from "../Images/cardBurgerTwo.jpg";
 import BurgerCardThirdImg from "../Images/cardBurder-three.jpg";
 
 const ItemCards = () => {
@@ -24,7 +24,7 @@ const ItemCards = () => {
   ];
 
   return (
-    <div className="flex gap-20">
+    <div className="flex gap-10 p-5 ">
       {prod.map((e) => {
         return (
           <CardLayout mainText={e.mainText} subText={e.subText} img={e.img} />
