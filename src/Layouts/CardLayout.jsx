@@ -2,11 +2,11 @@ import React from "react";
 
 const CardLayout = (props) => {
   return (
-    <div className=" w-fit p-5  overflow-hidden flex flex-col relative">
-      <div className="absolute  w-[400px] rounded-xl h-full overflow-hidden p-5 z-30 text-white flex flex-col justify-center  gap-5">
+    <div className=" w-fit p-5  overflow-hidden flex flex-col relative hover:scale-105 duration-300 ">
+      <div className="absolute  w-[400px] rounded-xl h-full overflow-hidden p-5 z-30 text-white flex flex-col justify-center gap-3 ">
         <p className="font-bold text-5xl">{props.mainText}</p>
         <p>{props.subText}</p>
-        <button className="bg-white text-black h-10 rounded-lg hover:bg-orange-400">
+        <button className="bg-white text-black h-10 rounded-lg hover:bg-orange-400 hover:text-white ">
           Order Now
         </button>
       </div>

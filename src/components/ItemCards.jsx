@@ -12,7 +12,7 @@ const ItemCards = () => {
       img: BurgerCardOneImg,
     },
     {
-      mainText: "Second-Burger ",
+      mainText: "Sec-Burger ",
       subText: "Woowwwww",
       img: BurgerCardTwoImg,
     },

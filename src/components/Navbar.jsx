@@ -41,7 +41,7 @@ function Navbar() {
             className={`p-2 text-white rounded-full ${
               change === false ? "bg-black" : ""
             }`}
-            onClick={() => setChange(change)}
+            onClick={() => setChange(!change)}
           >
             Pickup
           </p>
