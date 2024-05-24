@@ -13,29 +13,29 @@ const FoodCards = () => {
     },
     {
       img: BurgerOne,
-      food: "new Burger",
+      food: "Burger",
       rate: "$75",
     },
     {
       img: BurgerOne,
       food: "Burger",
-      rate: "$50",
+      rate: "$100",
     },
     {
       img: pizzaOne,
-      food: "Spicy Pizza",
-      rate: "$70",
+      food: "Pizza",
+      rate: "$150",
       
     },
     {
       img: ChickenFive,
       food: "Chicken",
-      rate: "$100",
+      rate: "$200",
     },
     {
       img: frienchFries,
       food: "Friench-Fries",
-      rate: "$50",
+      rate: "$150",
     },
   ];
 
