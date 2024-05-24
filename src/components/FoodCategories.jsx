@@ -9,10 +9,6 @@ const FoodCategories = () => {
                 <h1 className='border-2 p-3  cursor-pointer  border-orange-400 rounded-xl  text-center flex items-center justify-evenly hover:bg-orange-500 hover:text-white '>Pizza</h1>
                 <h1 className='border-2 p-3 cursor-pointer  border-orange-400 rounded-xl  text-center flex items-center justify-evenly hover:bg-orange-500 hover:text-white  '>Burger</h1>
                 <h1 className='border-2 p-3  cursor-pointer  border-orange-400 rounded-xl  text-center flex items-center justify-evenly hover:bg-orange-500 hover:text-white  '>Chicken</h1>
-                <h1 className='border-2 p-3  cursor-pointer  border-orange-400 rounded-xl  text-center flex items-center justify-evenly hover:bg-orange-500 hover:text-white  '>Fries</h1>
-                <h1 className='border-2 p-3  cursor-pointer  border-orange-400 rounded-xl  text-center flex items-center justify-evenly hover:bg-orange-500 hover:text-white  '>cheese</h1>
-                <h1 className='border-2 p-3  cursor-pointer  border-orange-400 rounded-xl  text-center flex items-center justify-evenly hover:bg-orange-500 hover:text-white  '>Thandouri</h1>
-                <h1 className='border-2 p-3  cursor-pointer  border-orange-400 rounded-xl  text-center flex items-center justify-evenly hover:bg-orange-500 hover:text-white  '>Mutton</h1>
                 <h1  className='border-2 p-3 cursor-pointer  border-orange-400 rounded-xl text-center flex items-center justify-evenly hover:bg-orange-500  hover:text-white '>See more</h1>
             </div>
             <h1 className=' text-left text-3xl '>Filter Prices</h1>

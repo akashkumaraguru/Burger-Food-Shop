@@ -2,7 +2,7 @@ import React from "react";
 
 const CardLayout = (props) => {
   return (
-    <div className=" w-fit p-5  overflow-hidden flex flex-col relative hover:scale-105 duration-300 ">
+    <div className=" w-fit gap-5 ml-10 overflow-hidden flex flex-col relative hover:scale-105 duration-300 ">
       <div className="absolute  rounded-xl h-full overflow-hidden p-5 z-30 text-white flex flex-col justify-center gap-3 ">
         <p className="font-bold text-5xl">{props.mainText}</p>
         <p>{props.subText}</p>
