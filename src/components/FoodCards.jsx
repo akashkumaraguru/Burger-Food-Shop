@@ -34,7 +34,7 @@ const FoodCards = () => {
     },
     {
       img: frienchFries,
-      food: "Friench-Fries",
+      food: "French Fries",
       rate: "$150",
     },
   ];
